@@ -16,7 +16,7 @@ document.getElementById("form-login").onsubmit = (e) => {
     let senha = document.getElementById("senha").value;
     let mensagem = document.getElementById("mensagem");
     let titulo = document.getElementById("titulo");
-    let botao = document.getElementById("botao-envio");
+    let botao = document.getElementById("btn btn-info");
 
     mensagem.innerHTML = "";
 
@@ -33,7 +33,7 @@ document.getElementById("form-login").onsubmit = (e) => {
     }
 
     
-    let isCadastro = titulo.innerText.toLowerCase() === "cadastro";
+    let isCadastro = titulo.innerText.toLowerCase() === "link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover";
 
     if (isCadastro) {
         
@@ -70,7 +70,7 @@ document.getElementById("form-login").onsubmit = (e) => {
 
 const toggle = document.getElementById("toggle");
 const titulo = document.getElementById("titulo");
-const botao = document.getElementById("botao-envio");
+const botao = document.getElementById("btn btn-info");
 
 toggle.addEventListener("click", () => {
     if (titulo.innerText === "Login") {
